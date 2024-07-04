@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metaetiquetas para el conjunto de caracteres y la configuración de la vista -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>Ingreso de Datos de Clientes</title>
+    <!-- Enlace al archivo CSS externo para estilos -->
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <section class="container">
+        <!-- Título de la sección -->
+        <h1>Ingreso de Clientes</h1>
+        <!-- Formulario para ingresar datos del cliente -->
+        <form id="clienteForm">
+            <!-- Campo para ingresar la cédula -->
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" placeholder="C.I." required>
+            
+            <!-- Campo para ingresar los apellidos -->
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Ingresar Apellidos" required>
+            
+            <!-- Campo para ingresar los nombres -->
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" placeholder="Ingresar nombres" required>
+            
+            <!-- Campo para ingresar la dirección -->
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="EJ: Calle X - Avenida X" required>
+            
+            <!-- Campo para ingresar el teléfono -->
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" placeholder="Nº Celular" required>
+            
+            <!-- Campo para ingresar el correo electrónico -->
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="@ejemplo.com" required>
+            
+            <!-- Botón para enviar el formulario -->
+            <button type="submit">Guardar</button>
+        </form>
+    </section>
+    
+    <!-- Sección para mostrar la lista de clientes guardados -->
+    <div id="clientesList">
+        <!-- Título de la sección de clientes guardados -->
+        <h2>Clientes Registrados</h2>
+        <!-- Contenedor para la lista -->
+        <div class="list">
+            <!-- Lista desordenada donde se mostrarán los clientes -->
+            <ul id="clientesUl"></ul>
+        </div>
+    </div>
+    
+    <!-- Enlace al archivo JavaScript externo para funcionalidad -->
+    <script src="formulario.js"></script>
+</body>
+</html>

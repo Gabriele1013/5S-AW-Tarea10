@@ -1,0 +1,130 @@
+/* Estilos generales del cuerpo del documento */
+body {
+    /* Fuente utilizada para el texto del documento */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Imagen de fondo */
+    background-image: url(https://imgv3.fotor.com/images/share/Free-pink-gradient-aesthetic-background-from-Fotor.jpg);
+    /* Utiliza Flexbox para centrar contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    /* Fondo blanco */
+    background: #fff;
+    /* Relleno interno */
+    padding: 20px;
+    /* Bordes redondeados */
+    border-radius: 5px;
+    /* Sombra alrededor del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Ancho y alto del contenedor */
+    width: 50%;
+    height: 82%;
+}
+
+/* Estilos para encabezados h1 y h2 */
+h1, h2 {
+    /* Texto centrado */
+    text-align: center;
+}
+
+/* Estilos para etiquetas (label) */
+label {
+    /* Mostrar como bloque */
+    display: block;
+    /* Espacio inferior */
+    margin-bottom: 5px;
+}
+
+/* Estilos para campos de texto y email */
+input[type="text"],
+input[type="email"] {
+    /* Ancho casi completo */
+    width: 95%;
+    /* Relleno interno */
+    padding: 8px;
+    /* Espacio inferior */
+    margin-bottom: 10px;
+    /* Borde */
+    border: 1px solid #ccc;
+    /* Bordes redondeados */
+    border-radius: 3px;
+    /* Transición suave en todos los cambios */
+    transition: all 300ms;
+}
+
+/* Efecto hover para campos de texto y email */
+input[type="text"]:hover,
+input[type="email"]:hover {
+    /* Escalar ligeramente el tamaño */
+    transform: scale(1.01);
+}
+
+/* Estilos para el botón */
+button {
+    /* Ancho completo */
+    width: 100%;
+    /* Relleno interno */
+    padding: 10px;
+    /* Sin borde */
+    border: none;
+    /* Color de fondo */
+    background-color: #4562a1;
+    /* Color del texto */
+    color: #fff;
+    /* Tamaño de la fuente */
+    font-size: 16px;
+    /* Bordes redondeados */
+    border-radius: 3px;
+    /* Cambiar cursor a puntero */
+    cursor: pointer;
+    /* Centrar contenido con Flexbox */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* Transición suave en todos los cambios */
+    transition: all 300ms;
+}
+
+/* Efecto hover para el botón */
+button:hover {
+    /* Cambiar color de fondo */
+    background-color: #5f75a4;
+    /* Escalar ligeramente el tamaño */
+    transform: scale(1.02);
+}
+
+/* Estilos para el contenedor de la lista de clientes */
+#clientesList {
+    /* Espacio superior */
+    margin-top: 20px;
+}
+
+/* Estilos para la lista desordenada de clientes */
+#clientesUl {
+    /* Sin estilo de lista */
+    list-style-type: none;
+    /* Sin relleno interno */
+    padding: 0;
+}
+
+/* Estilos para los elementos de la lista */
+#clientesUl li {
+    /* Fondo gris claro */
+    background: #eee;
+    /* Relleno interno */
+    padding: 20px;
+    /* Espacio superior */
+    margin-top: 10px;
+    /* Borde inferior */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Bordes redondeados para todos los elementos de lista */
+li {
+    border-radius: 10px;
+}
